@@ -1,3 +1,4 @@
+import './Navbar.css'
 import { NavLink } from "react-router";
 import { FaGithub } from "react-icons/fa";
 
