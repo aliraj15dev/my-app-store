@@ -1,8 +1,12 @@
 import { useParams } from "react-router";
 import useApps from "../Hooks/useApps";
 import { Bar, BarChart, Rectangle, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+import { useState } from "react";
+ import { ToastContainer, toast } from 'react-toastify';
+ import 'react-toastify/dist/ReactToastify.css';
 
 const AppInfo = () => {
+  const [click, setClick] = useState(false)
   const { Id } = useParams();
   const appId = Number(Id);
 
@@ -15,9 +19,16 @@ const AppInfo = () => {
     return <div>Product Not Found or Loading...</div>;
   }
 
-  const { image, title, companyName, downloads, ratingAvg, reviews, ratings,description } =
+  const { id, image, title, companyName, downloads, ratingAvg, reviews, ratings,description } =
     app;
   const sortedRatings = [...ratings].sort((a, b) => b.name.localeCompare(a.name));
+
+
+  const handleInstall=(id)=>{
+    setClick(true)
+    toast.success('Successfully Installed!')
+  }
+
 
 
   return (
@@ -63,9 +74,7 @@ const AppInfo = () => {
               <h4 className="text-4xl font-black">{reviews}</h4>
             </div>
           </div>
-          <button className="btn bg-green-500 text-white text-xl">
-            Install Now (239MB)
-          </button>
+          <button onClick={()=>handleInstall(id)} className={`btn bg-green-500 text-white text-xl`}> {click?"Installed":`Install Now (${downloads}B)`} </button>
         </div>
       </div>
 
@@ -99,6 +108,7 @@ const AppInfo = () => {
         <p>{description}</p>
       </div>
       </div>
+      <ToastContainer/>
     </div>
   );
 };
