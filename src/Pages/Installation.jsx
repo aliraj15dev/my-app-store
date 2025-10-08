@@ -8,4 +8,4 @@ const Installation = () => {
     );
 };
 
-export default Installation;Installation
+export default Installation;

@@ -5,11 +5,11 @@ import ErrorPage from "./ErrorPage";
 import Apps from "../Pages/Apps";
 import Installation from "../Pages/Installation";
 import AppInfo from "../Pages/AppInfo";
+import NoAppsFound from "../Pages/NoAppsFound";
 
 const router = createBrowserRouter([
     {
         path:'/', Component:Root,
-        // errorElement:<ErrorPage/>,
         children:[
             {index:true, Component:Home},
             {path:'apps', Component:Apps},

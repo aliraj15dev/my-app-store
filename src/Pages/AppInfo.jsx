@@ -7,6 +7,7 @@ import { useState } from "react";
 
 const AppInfo = () => {
   const [click, setClick] = useState(false)
+  const [isDisable, setIsDisable] = useState(false)
   const { Id } = useParams();
   const appId = Number(Id);
 
@@ -19,13 +20,14 @@ const AppInfo = () => {
     return <div>Product Not Found or Loading...</div>;
   }
 
-  const { id, image, title, companyName, downloads, ratingAvg, reviews, ratings,description } =
+  const { id, image, title, companyName, downloads, ratingAvg, reviews, ratings,description,size } =
     app;
   const sortedRatings = [...ratings].sort((a, b) => b.name.localeCompare(a.name));
 
 
-  const handleInstall=(id)=>{
+  const handleInstall=()=>{
     setClick(true)
+    setIsDisable(true)
     toast.success('Successfully Installed!')
   }
 
@@ -74,7 +76,8 @@ const AppInfo = () => {
               <h4 className="text-4xl font-black">{reviews}</h4>
             </div>
           </div>
-          <button onClick={()=>handleInstall(id)} className={`btn bg-green-500 text-white text-xl`}> {click?"Installed":`Install Now (${downloads}B)`} </button>
+          <button onClick={()=>handleInstall(id)} disabled={isDisable} className={`btn bg-green-500 text-white text-xl`}>
+            {click?"Installed":`Install Now (${size}MB)`} </button>
         </div>
       </div>
 

@@ -1,5 +1,5 @@
 import './Navbar.css'
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 import { FaGithub } from "react-icons/fa";
 
 const Navbar = () => {
@@ -39,7 +39,7 @@ const Navbar = () => {
             <figure className="w-10">
               <img src="../../src/assets/logo.png" alt="" />
             </figure>
-            <a className="text-xl font-bold text-violet-500">HERO.IO</a>
+            <Link to='/' className="text-xl font-bold text-violet-500">HERO.IO</Link>
           </div>
           <div className="navbar-center hidden md:flex">
             <ul className="menu menu-horizontal px-1 text-2xl">
