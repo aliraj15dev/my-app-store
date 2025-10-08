@@ -16,7 +16,7 @@ const App = ({ app }) => {
         <div className="flex justify-between items-center">
           <div className="flex gap-1 items-center font-bold p-2 text-green-500 bg-green-200 rounded-lg">
             <FaDownload />
-            <h2>{downloads}</h2>
+            <h2>{downloads}M</h2>
           </div>
           <div className="flex gap-1 items-center font-bold text-orange-500 bg-orange-200 p-2 rounded-lg">
             <FaStar />
