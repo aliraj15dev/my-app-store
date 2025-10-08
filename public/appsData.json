@@ -1,0 +1,362 @@
+[
+  {
+    "image": "https://play-lh.googleusercontent.com/lQYxSdISBENwWO7RCF1j_AzjzdOaa1LUgRckYPFVvDkSWdD8P6jqCZebmAyZfufGpIY",
+    "title": "Spotify",
+    "companyName": "Spotify AB",
+    "id": 1,
+    "description": "Spotify is a leading music streaming app offering millions of songs, podcasts, and playlists from around the world. Discover new music, follow your favorite artists, create personal playlists, and enjoy seamless playback across all your devices. Experience high-quality sound and personalized recommendations based on your listening habits.",
+    "size": 120,
+    "reviews": "854K",
+    "ratingAvg": 4.5,
+    "downloads": "29.9M",
+    "ratings": [
+      { "name": "1 star", "count": 500000 },
+      { "name": "2 star", "count": 400000 },
+      { "name": "3 star", "count": 1000000 },
+      { "name": "4 star", "count": 5000000 },
+      { "name": "5 star", "count": 26000000 }
+    ]
+  },
+  {
+    "image": "https://img.freepik.com/premium-vector/instagram-logo_628407-1914.jpg?semt=ais_hybrid&w=740&q=80",
+    "title": "Instagram",
+    "companyName": "Meta Platforms, Inc.",
+    "id": 2,
+    "description": "Instagram lets you share your life through photos, videos, and stories. Connect with friends, discover new content from creators around the globe, and explore reels for endless entertainment. Whether you're posting your latest adventures or following trends, Instagram helps you express yourself creatively.",
+    "size": 90,
+    "reviews": "809K",
+    "ratingAvg": 4.3,
+    "downloads": "25.8M",
+    "ratings": [
+      { "name": "1 star", "count": 2500000 },
+      { "name": "2 star", "count": 1500000 },
+      { "name": "3 star", "count": 5000000 },
+      { "name": "4 star", "count": 35000000 },
+      { "name": "5 star", "count": 106000000 }
+    ]
+  },
+  {
+    "image": "https://img.freepik.com/premium-vector/tik-tok-glitch-icon-social-media-tik-tok-icon-vinnitsa-ukraine-february-22-02-2023_250246-536.jpg?semt=ais_hybrid&w=740&q=80",
+    "title": "TikTok",
+    "companyName": "TikTok Pte. Ltd.",
+    "id": 3,
+    "description": "TikTok is the ultimate destination for short-form mobile videos. Create, watch, and share clips filled with creativity, humor, and entertainment. Discover trending challenges, dance routines, comedy skits, and viral content made by millions of users. TikTok offers a personalized feed tailored just for you.",
+    "size": 85,
+    "reviews": "760K",
+    "ratingAvg": 4.4,
+    "downloads": "16.9M",
+    "ratings": [
+      { "name": "1 star", "count": 2000000 },
+      { "name": "2 star", "count": 1000000 },
+      { "name": "3 star", "count": 3000000 },
+      { "name": "4 star", "count": 15000000 },
+      { "name": "5 star", "count": 57000000 }
+    ]
+  },
+  {
+    "image": "https://store-images.s-microsoft.com/image/apps.56161.9007199266246365.1d5a6a53-3c49-4f80-95d7-78d76b0e05d0.a3e87fea-e03e-4c0a-8f26-9ecef205fa7b",
+    "title": "Netflix",
+    "companyName": "Netflix, Inc.",
+    "id": 4,
+    "description": "Netflix gives you unlimited access to award-winning TV shows, movies, documentaries, and stand-up specials. Watch your favorite content anytime, anywhere on your smartphone, tablet, or TV. With personalized recommendations and offline downloads, entertainment is always at your fingertips.",
+    "size": 65,
+    "reviews": "901K",
+    "ratingAvg": 4.4,
+    "downloads": "30.2M",
+    "ratings": [
+      { "name": "1 star", "count": 400000 },
+      { "name": "2 star", "count": 300000 },
+      { "name": "3 star", "count": 1000000 },
+      { "name": "4 star", "count": 4000000 },
+      { "name": "5 star", "count": 9200000 }
+    ]
+  },
+  {
+    "image": "https://img.freepik.com/premium-vector/whatsapp-icon-design-social-media-messaging-app-branding_1303737-6449.jpg?semt=ais_hybrid&w=740&q=80",
+    "title": "WhatsApp Messenger",
+    "companyName": "WhatsApp LLC",
+    "id": 5,
+    "description": "WhatsApp Messenger lets you chat, call, and share instantly with anyone around the world. Enjoy end-to-end encrypted messaging, group chats, voice and video calls, and multimedia sharing — all for free. Stay connected securely with fast and reliable communication features.",
+    "size": 40,
+    "reviews": "872K",
+    "ratingAvg": 4.6,
+    "downloads": "50M",
+    "ratings": [
+      { "name": "1 star", "count": 1000000 },
+      { "name": "2 star", "count": 800000 },
+      { "name": "3 star", "count": 2500000 },
+      { "name": "4 star", "count": 25000000 },
+      { "name": "5 star", "count": 157000000 }
+    ]
+  },
+  {
+    "image": "https://store-images.s-microsoft.com/image/apps.64248.14208673485779370.88f23073-7e41-4921-aef9-76103983bd31.714459aa-91a6-45a3-a7ed-1f6a283c93fd",
+    "title": "Snapchat",
+    "companyName": "Snap Inc.",
+    "id": 6,
+    "description": "Snapchat makes it easy to capture and share every moment instantly. Send snaps to friends, post stories, and explore Spotlight for viral short videos. Use filters, lenses, and Bitmojis to make your messages fun and expressive. Snapchat is where real friendships are celebrated every day.",
+    "size": 80,
+    "reviews": "906K",
+    "ratingAvg": 4.2,
+    "downloads": "17M",
+    "ratings": [
+      { "name": "1 star", "count": 800000 },
+      { "name": "2 star", "count": 600000 },
+      { "name": "3 star", "count": 3000000 },
+      { "name": "4 star", "count": 7000000 },
+      { "name": "5 star", "count": 20600000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/62/YouTube_social_white_square_%282024%29.svg",
+    "title": "YouTube",
+    "companyName": "Google LLC",
+    "id": 7,
+    "description": "YouTube is the world's largest video-sharing platform. Watch millions of videos from creators, stream live events, listen to music, and upload your own content. Discover educational tutorials, entertainment, reviews, and more — all customized to your interests.",
+    "size": 95,
+    "reviews": "807K",
+    "ratingAvg": 4.3,
+    "downloads": "26.8M",
+    "ratings": [
+      { "name": "1 star", "count": 4000000 },
+      { "name": "2 star", "count": 3000000 },
+      { "name": "3 star", "count": 9000000 },
+      { "name": "4 star", "count": 45000000 },
+      { "name": "5 star", "count": 89000000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/500px-Telegram_logo.svg.png",
+    "title": "Telegram",
+    "companyName": "Telegram FZ-LLC",
+    "id": 8,
+    "description": "Telegram is a fast and secure messaging app that prioritizes privacy. With cloud sync, large file sharing, customizable channels, and bots, it’s designed for both personal and professional use. Chat securely, organize groups, and explore advanced privacy features.",
+    "size": 42,
+    "reviews": "679K",
+    "ratingAvg": 4.6,
+    "downloads": "8.7M",
+    "ratings": [
+      { "name": "1 star", "count": 100000 },
+      { "name": "2 star", "count": 80000 },
+      { "name": "3 star", "count": 300000 },
+      { "name": "4 star", "count": 2000000 },
+      { "name": "5 star", "count": 7000000 }
+    ]
+  },
+  {
+    "image": "https://static.wikia.nocookie.net/google/images/1/19/Google_Maps_Icon.png/revision/latest/thumbnail/width/360/height/360?cb=20201022161440",
+    "title": "Google Maps",
+    "companyName": "Google LLC",
+    "id": 9,
+    "description": "Google Maps helps you explore the world with precise navigation and real-time traffic updates. Discover local restaurants, landmarks, and hidden gems. With offline maps, street view, and turn-by-turn directions, you can confidently travel anywhere.",
+    "size": 75,
+    "reviews": "896K",
+    "ratingAvg": 4.5,
+    "downloads": "29.6M",
+    "ratings": [
+      { "name": "1 star", "count": 500000 },
+      { "name": "2 star", "count": 300000 },
+      { "name": "3 star", "count": 1500000 },
+      { "name": "4 star", "count": 5000000 },
+      { "name": "5 star", "count": 14500000 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR7xbUVkLMh7-sCFxaXARD8-i9J68CjcPQnw&s",
+    "title": "Amazon Shopping",
+    "companyName": "Amazon Mobile LLC",
+    "id": 10,
+    "description": "Shop from millions of products across electronics, fashion, and home essentials. Amazon Shopping offers quick delivery, detailed tracking, and exclusive discounts. Explore deals, manage your orders, and enjoy a seamless online shopping experience.",
+    "size": 60,
+    "reviews": "839K",
+    "ratingAvg": 4.4,
+    "downloads": "19.2M",
+    "ratings": [
+      { "name": "1 star", "count": 400000 },
+      { "name": "2 star", "count": 300000 },
+      { "name": "3 star", "count": 1200000 },
+      { "name": "4 star", "count": 5000000 },
+      { "name": "5 star", "count": 11000000 }
+    ]
+  },
+  {
+    "image": "https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg",
+    "title": "Twitter (X)",
+    "companyName": "X Corp.",
+    "id": 11,
+    "description": "Twitter, now known as X, connects you to real-time global conversations. Follow trending news, join discussions, and engage with communities worldwide. Share your opinions, photos, and videos — and stay up-to-date with what matters most to you.",
+    "size": 72,
+    "reviews": "900K",
+    "ratingAvg": 4.0,
+    "downloads": "17.4M",
+    "ratings": [
+      { "name": "1 star", "count": 2000000 },
+      { "name": "2 star", "count": 1500000 },
+      { "name": "3 star", "count": 6000000 },
+      { "name": "4 star", "count": 30000000 },
+      { "name": "5 star", "count": 61000000 }
+    ]
+  },
+  {
+    "image": "https://cdn.shopify.com/app-store/listing_images/8a98eae41ba0d6e898e2b322b7ac6202/icon/CNW9z830lu8CEAE=.png",
+    "title": "Pinterest",
+    "companyName": "Pinterest, Inc.",
+    "id": 12,
+    "description": "Pinterest is a visual discovery platform where you can find inspiration for everything — from home décor and style to recipes and DIY ideas. Save pins you love, organize them into boards, and explore creative ideas from millions of users worldwide.",
+    "size": 80,
+    "reviews": "811K",
+    "ratingAvg": 4.6,
+    "downloads": "27.2M",
+    "ratings": [
+      { "name": "1 star", "count": 200000 },
+      { "name": "2 star", "count": 150000 },
+      { "name": "3 star", "count": 500000 },
+      { "name": "4 star", "count": 1500000 },
+      { "name": "5 star", "count": 6650000 }
+    ]
+  },
+  {
+    "image": "https://store-images.s-microsoft.com/image/apps.15970.14375561300249796.05fe8c27-ce9e-4144-8702-0e81e2f575b1.042364cb-b745-4796-a520-61291e2dd6b9",
+    "title": "Reddit",
+    "companyName": "Reddit, Inc.",
+    "id": 13,
+    "description": "Reddit is a massive network of communities where users can dive into discussions on any topic imaginable. Share stories, ask questions, post memes, and connect with people who share your interests. It’s the front page of the internet — made by users, for users.",
+    "size": 55,
+    "reviews": "930K",
+    "ratingAvg": 4.2,
+    "downloads": "14.9M",
+    "ratings": [
+      { "name": "1 star", "count": 100000 },
+      { "name": "2 star", "count": 80000 },
+      { "name": "3 star", "count": 500000 },
+      { "name": "4 star", "count": 1500000 },
+      { "name": "5 star", "count": 4800000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/tw_coGKgk1K_zO-Ypf9zBKV1s-KT3dYN1MIUxIqtnbfmON5x_YmuoAr31gE4oSfJHNtA-aStTd-qe9R8S6NVyA",
+    "title": "Duolingo",
+    "companyName": "Duolingo",
+    "id": 14,
+    "description": "Learn new languages in a fun and interactive way with Duolingo. Practice reading, speaking, and listening with bite-sized lessons. Track your progress, earn rewards, and challenge friends while mastering over 30 languages from English to Japanese.",
+    "size": 30,
+    "reviews": "895K",
+    "ratingAvg": 4.7,
+    "downloads": "15M",
+    "ratings": [
+      { "name": "1 star", "count": 100000 },
+      { "name": "2 star", "count": 90000 },
+      { "name": "3 star", "count": 400000 },
+      { "name": "4 star", "count": 2000000 },
+      { "name": "5 star", "count": 12400000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/3aWGqSf3T_p3F6wc8FFvcZcnjWlxpZdNaqFVEvPwQ1gTOPkVoZwq6cYvfK9eCkwCXbRY",
+    "title": "Canva",
+    "companyName": "Canva",
+    "id": 15,
+    "description": "Canva helps you create stunning designs for social media, marketing, or personal projects. Choose from thousands of templates, customize with photos, fonts, and colors, and collaborate with others in real-time. Perfect for both beginners and professionals.",
+    "size": 50,
+    "reviews": "898K",
+    "ratingAvg": 4.8,
+    "downloads": "30M",
+    "ratings": [
+      { "name": "1 star", "count": 70000 },
+      { "name": "2 star", "count": 60000 },
+      { "name": "3 star", "count": 200000 },
+      { "name": "4 star", "count": 1000000 },
+      { "name": "5 star", "count": 8700000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/yZsmiNjmji3ZoOuLthoVvptLB9cZ0vCmitcky4OUXNcEFV3IEQkrBD2uu5kuWRF5_ERA",
+    "title": "Zoom",
+    "companyName": "Zoom Video Communications, Inc.",
+    "id": 16,
+    "description": "Zoom is the ultimate video conferencing tool for meetings, webinars, and online collaboration. Host HD meetings with up to hundreds of participants, share screens, record sessions, and chat in real time — whether for business or personal use.",
+    "size": 85,
+    "reviews": "859K",
+    "ratingAvg": 4.3,
+    "downloads": "9M",
+    "ratings": [
+      { "name": "1 star", "count": 300000 },
+      { "name": "2 star", "count": 200000 },
+      { "name": "3 star", "count": 800000 },
+      { "name": "4 star", "count": 3000000 },
+      { "name": "5 star", "count": 12500000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/jKU64njy8urP89V1O63eJxMtvWjDGETPlHVIhDv9WZAYzsSxRWyWZkUlBJZj_HbkHA",
+    "title": "Microsoft Teams",
+    "companyName": "Microsoft Corporation",
+    "id": 17,
+    "description": "Microsoft Teams combines chat, meetings, file sharing, and apps into one platform for collaboration. Stay connected with coworkers, share updates, and manage projects efficiently in a unified workspace designed for hybrid teams.",
+    "size": 120,
+    "reviews": "807K",
+    "ratingAvg": 4.2,
+    "downloads": "15M",
+    "ratings": [
+      { "name": "1 star", "count": 200000 },
+      { "name": "2 star", "count": 150000 },
+      { "name": "3 star", "count": 400000 },
+      { "name": "4 star", "count": 2000000 },
+      { "name": "5 star", "count": 5250000 }
+    ]
+  },
+  {
+    "image": "https://pbs.twimg.com/profile_images/1661161645857710081/6WtDIesg_400x400.png",
+    "title": "LinkedIn",
+    "companyName": "LinkedIn Corporation",
+    "id": 18,
+    "description": "LinkedIn is the world’s largest professional networking platform. Connect with colleagues, discover job opportunities, share insights, and grow your career. Whether you’re job hunting or hiring, LinkedIn helps build meaningful professional relationships.",
+    "size": 100,
+    "reviews": "840K",
+    "ratingAvg": 4.3,
+    "downloads": "19M",
+    "ratings": [
+      { "name": "1 star", "count": 300000 },
+      { "name": "2 star", "count": 250000 },
+      { "name": "3 star", "count": 800000 },
+      { "name": "4 star", "count": 4000000 },
+      { "name": "5 star", "count": 9700000 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZkjJsjxdWHZx1bu22YA_cJm7bicMd7d_pfw&s",
+    "title": "Discord",
+    "companyName": "Discord Inc.",
+    "id": 19,
+    "description": "Discord is a voice, video, and text chat app for communities and friends. Create servers, host hangouts, stream games, and stay connected. Whether for gaming, studying, or casual chats, Discord provides smooth, secure, and fun communication.",
+    "size": 120,
+    "reviews": "809K",
+    "ratingAvg": 4.5,
+    "downloads": "24M",
+    "ratings": [
+      { "name": "1 star", "count": 100000 },
+      { "name": "2 star", "count": 120000 },
+      { "name": "3 star", "count": 400000 },
+      { "name": "4 star", "count": 2500000 },
+      { "name": "5 star", "count": 8000000 }
+    ]
+  },
+  {
+    "image": "https://www.computerhope.com/issues/pictures/google-drive-logo.png",
+    "title": "Google Drive",
+    "companyName": "Google LLC",
+    "id": 20,
+    "description": "Google Drive provides secure cloud storage for your files, photos, and documents. Access and share your data anywhere with automatic syncing and real-time collaboration through Google Docs, Sheets, and Slides.",
+    "size": 70,
+    "reviews": "907K",
+    "ratingAvg": 4.6,
+    "downloads": "11M",
+    "ratings": [
+      { "name": "1 star", "count": 200000 },
+      { "name": "2 star", "count": 150000 },
+      { "name": "3 star", "count": 600000 },
+      { "name": "4 star", "count": 4000000 },
+      { "name": "5 star", "count": 14000000 }
+    ]
+  }
+]

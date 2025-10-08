@@ -1,7 +1,7 @@
 import React from "react";
 import { FaDownload,FaGooglePlay, FaStar } from "react-icons/fa";
 
-const StatusSection = () => {
+const StatesSection = () => {
   return (
     <div className="bg-gradient-to-r from-blue-700 to-violet-500 text-white text-center py-10">
       <div className="max-w-9/10 mx-auto space-y-5">
@@ -41,4 +41,4 @@ const StatusSection = () => {
   );
 };
 
-export default StatusSection;
+export default StatesSection;
