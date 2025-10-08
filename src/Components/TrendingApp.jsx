@@ -1,12 +1,14 @@
 import { FaDownload, FaStar } from "react-icons/fa";
+import { Link } from "react-router";
 
 
 const TrendingApp = ({app}) => {
-    const {image,title,downloads, ratingAvg} = app
+    const {id,image,title,downloads, ratingAvg} = app
 
     return (
         <div>
-            <div className="shadow-xl border-2 border-gray-300 p-5 space-y-3 rounded-xl hover:scale-110 duration-1000 w-60 mx-auto sm:w-auto">
+            <Link to={`/appinfo/${id}`}>
+                <div className="shadow-xl border-2 border-gray-300 p-5 space-y-3 rounded-xl hover:scale-110 duration-1000 w-60 mx-auto sm:w-auto">
                 <figure className='flex justify-center items-center'>
                     <img className='w-60 h-40 p-5 bg-gray-200 rounded-lg' src={image} alt="App Image" />
                 </figure>
@@ -21,6 +23,7 @@ const TrendingApp = ({app}) => {
                     </div>
                 </div>
             </div>
+            </Link>
         </div>
     );
 };
