@@ -9,14 +9,15 @@ import AppInfo from "../Pages/AppInfo";
 const router = createBrowserRouter([
     {
         path:'/', Component:Root,
+        // errorElement:<ErrorPage/>,
         children:[
             {index:true, Component:Home},
             {path:'apps', Component:Apps},
             {path:'appinfo/:Id', Component:AppInfo},
             {path:'installation', Component:Installation},
+            {path:'*', Component:ErrorPage}
         ]
     },
-    {path:'*', Component:ErrorPage}
 ])
 
 export default router;
