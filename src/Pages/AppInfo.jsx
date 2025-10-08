@@ -24,8 +24,8 @@ const AppInfo = () => {
     <div className="bg-gray-100 py-10">
       <div className="max-w-9/10 mx-auto">
       <h1 className="text-4xl font-semibold">App Details</h1>
-      <div className="flex flex-col sm:flex-row gap-10 my-5 border-b-2 border-gray-200 pb-5">
-        <figure className="shadow-md w-100 flex justify-center items-center py-3">
+      <div className="flex flex-col sm:flex-row gap-5 sm:gap-10 my-5 border-b-2 border-gray-200 pb-5">
+        <figure className="shadow-md flex justify-center items-center py-3">
           <img
             className="w-full h-full"
             src={image}
@@ -46,19 +46,19 @@ const AppInfo = () => {
           <div className="flex gap-10 items-center">
             <div>
               <img
-                src="../../src/assets/icons/download.png"
+                src="/public/icons/download.png"
                 alt="Download Icon"
               />
               <p>Downloads</p>
               <h4 className="text-4xl font-black">{downloads}</h4>
             </div>
             <div>
-              <img src="../../src/assets/icons/rating.png" alt="Rating Icon" />
+              <img src="/public/icons/rating.png" alt="Rating Icon" />
               <p>Average Rating</p>
               <h4 className="text-4xl font-black">{ratingAvg}</h4>
             </div>
             <div>
-              <img src="../../src/assets/icons/review.png" alt="Review Icon" />
+              <img src="/public/icons/review.png" alt="Review Icon" />
               <p>Total Reviews</p>
               <h4 className="text-4xl font-black">{reviews}</h4>
             </div>
