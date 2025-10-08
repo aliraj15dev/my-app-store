@@ -2,8 +2,9 @@ import { useParams } from "react-router";
 import useApps from "../Hooks/useApps";
 import { Bar, BarChart, Rectangle, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 import { useState } from "react";
- import { ToastContainer, toast } from 'react-toastify';
- import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { setItemTLS } from "../../public/localStorage";
 
 const AppInfo = () => {
   const [click, setClick] = useState(false)
@@ -25,10 +26,12 @@ const AppInfo = () => {
   const sortedRatings = [...ratings].sort((a, b) => b.name.localeCompare(a.name));
 
 
-  const handleInstall=()=>{
+  const handleInstall=(id)=>{
     setClick(true)
     setIsDisable(true)
     toast.success('Successfully Installed!')
+
+    setItemTLS(id)
   }
 
 

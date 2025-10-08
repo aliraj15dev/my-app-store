@@ -1,7 +1,7 @@
 import 'react-toastify/dist/ReactToastify.css';
 
 const getItemsFLS = () =>{
-    const allAppsId = localStorage.getItem("wishlist")
+    const allAppsId = localStorage.getItem("installed")
 
     if(allAppsId){
         const appsId = JSON.parse(allAppsId)
@@ -12,17 +12,26 @@ const getItemsFLS = () =>{
     }
 }
 
-const setItem = (id) =>{
+const setItemTLS = (id) =>{
     const appsId = getItemsFLS()
 
     if(appsId.includes(id)){
+        alert('ache vai')
         return;
     }
     else{
         appsId.push(id)
         const strApps = JSON.stringify(appsId)
-        localStorage.setItem("wishlist", strApps)
+        localStorage.setItem("installed", strApps)
     }
 }
 
-export {setItem, getItemsFLS}
+
+const removeItemFLS = (id) =>{
+    const appsId = getItemsFLS()
+    const updatedId = appsId.filter(appId=>appId!==id)
+
+    localStorage.setItem("installed", JSON.stringify(updatedId))
+}
+
+export {setItemTLS, getItemsFLS, removeItemFLS}
