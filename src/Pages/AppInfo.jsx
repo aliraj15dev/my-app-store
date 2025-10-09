@@ -5,6 +5,9 @@ import { useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { setItemTLS } from "../../public/localStorage";
+import downloadIcon from '../assets/icons/download.png'
+import ratingIcon from '../assets/icons/rating.png'
+import reviewIcon from '../assets/icons/review.png'
 
 const AppInfo = () => {
   const [click, setClick] = useState(false)
@@ -62,19 +65,19 @@ const AppInfo = () => {
           <div className="flex gap-10 items-center">
             <div>
               <img
-                src="/public/icons/download.png"
+                src={downloadIcon}
                 alt="Download Icon"
               />
               <p>Downloads</p>
               <h4 className="text-4xl font-black">{downloads}</h4>
             </div>
             <div>
-              <img src="/public/icons/rating.png" alt="Rating Icon" />
+              <img src={ratingIcon} alt="Rating Icon" />
               <p>Average Rating</p>
               <h4 className="text-4xl font-black">{ratingAvg}</h4>
             </div>
             <div>
-              <img src="/public/icons/review.png" alt="Review Icon" />
+              <img src={reviewIcon} alt="Review Icon" />
               <p>Total Reviews</p>
               <h4 className="text-4xl font-black">{reviews}</h4>
             </div>

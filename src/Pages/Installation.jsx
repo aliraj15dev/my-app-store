@@ -4,6 +4,7 @@ import useApps from "../Hooks/useApps";
 import InstalledApp from "./InstalledApp";
 import { ToastContainer } from "react-toastify";
 import { useEffect, useState } from "react";
+import logo from '../assets/logo.png'
 
 const Installation = () => {
   const installedAppsID = getItemsFLS()
@@ -22,7 +23,7 @@ const Installation = () => {
   if (!delayOver) {
     return (
       <div className="flex justify-center items-center h-screen bg-gray-100">
-        <img src="../../src/assets/logo.png" className="w-30 animate-spin" />
+        <img src={logo} className="w-30 animate-spin" />
       </div>
     )
   }

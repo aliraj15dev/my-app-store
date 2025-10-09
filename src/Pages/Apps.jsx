@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import useApps from "../Hooks/useApps";
 import App from "./App";
 import NoAppsFound from "./NoAppsFound";
+import logo from '../assets/logo.png'
 
 const Apps = () => {
   const [searchValue, setSearchValue] = useState("")
@@ -40,7 +41,7 @@ const Apps = () => {
     return (
       <div className="flex justify-center items-center h-screen bg-gray-100">
         <img
-          src="../../src/assets/logo.png"
+          src={logo}
           className="w-30 animate-spin"
           alt="loading..."
         />
@@ -58,7 +59,7 @@ const Apps = () => {
     return (
       <div className="flex justify-center items-center h-screen bg-gray-100">
         <img
-          src="../../src/assets/logo.png"
+          src={logo}
           className="w-20 animate-spin"
           alt="loading..."
         />

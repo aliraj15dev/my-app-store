@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Banner from '../Components/Banner';
 import StatesSection from '../Components/StatesSection';
 import TopApps from '../Components/TopApps';
+import logo from '../assets/logo.png'
 
 const Home = () => {
 
@@ -14,7 +15,7 @@ const Home = () => {
       if (!delayOver){
         return (
           <div className="flex justify-center items-center h-screen bg-gray-100">
-            <img src="../../src/assets/logo.png" className="w-30 animate-spin"></img>
+            <img src={logo} className="w-30 animate-spin"></img>
           </div>
         )
       }

@@ -6,14 +6,8 @@ import 'react-toastify/dist/ReactToastify.css';
 const InstalledApp = ({ app }) => {
     const { id,image, title, downloads, ratingAvg,size } = app;
 
-    // const preIds = getItemsFLS()
-
-
-
     const handleUninstall = (id) =>{
       removeItemFLS(id)
-      // const changedInstalled = preIds.filter(preId=>preId!==id)
-      // setInstalled(changedInstalled)
       toast.success('Uninstalled the App!')
     }
 

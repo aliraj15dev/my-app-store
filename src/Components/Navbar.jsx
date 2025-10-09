@@ -1,6 +1,7 @@
 import './Navbar.css'
 import { Link, NavLink } from "react-router";
 import { FaGithub } from "react-icons/fa";
+import logo from '../assets/logo.png'
 
 const Navbar = () => {
   return (
@@ -37,7 +38,7 @@ const Navbar = () => {
               </ul>
             </div>
             <figure className="w-10">
-              <img src="../../src/assets/logo.png" alt="" />
+              <img src={logo} alt="" />
             </figure>
             <Link to='/' className="text-xl font-bold text-violet-500">HERO.IO</Link>
           </div>
