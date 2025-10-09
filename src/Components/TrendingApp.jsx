@@ -1,9 +1,9 @@
 import { FaDownload, FaStar } from "react-icons/fa";
 import { Link } from "react-router";
 
-
 const TrendingApp = ({app}) => {
-    const {id,image,title,downloads, ratingAvg} = app
+
+    const {id,image,title,downloads,ratingAvg} = app
 
     return (
         <div>

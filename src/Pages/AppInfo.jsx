@@ -13,31 +13,28 @@ import NoAppsFound from "./NoAppsFound";
 const AppInfo = () => {
   const totalInstalled = getItemsFLS()
 
-  const [isDisable, setIsDisable] = useState(false)
+  const { Id } = useParams()
+  const appId = Number(Id)
 
-  const { Id } = useParams();
-  const appId = Number(Id);
-
-  const appsData = useApps();
-  const { apps } = appsData;
-
+  const appsData = useApps()
+  const { apps } = appsData
   const app = apps.find((app) => app.id === appId);
 
+  const isInstalled = totalInstalled.some(installedId => installedId === appId)
+  const [isDisable, setIsDisable] = useState(isInstalled)
+
   if (!app) {
-    return <NoAppsFound/>;
+    return <NoAppsFound/>
   }
 
   const { id, image, title, companyName, downloads, ratingAvg, reviews, ratings,description,size } =
-    app;
-  const sortedRatings = [...ratings].sort((a, b) => b.name.localeCompare(a.name));
+  app
+  const sortedRatings = [...ratings].sort((a, b) => b.name.localeCompare(a.name))
 
 
   const handleInstall=(id)=>{
     setItemTLS(id)
-    if(totalInstalled){
-      const paici = totalInstalled.some(installed=>installed===id)
-      setIsDisable(paici)
-    }
+    setIsDisable(true)
   }
 
   return (
