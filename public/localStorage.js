@@ -1,3 +1,4 @@
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const getItemsFLS = () =>{
@@ -16,13 +17,14 @@ const setItemTLS = (id) =>{
     const appsId = getItemsFLS()
 
     if(appsId.includes(id)){
-        alert('ache vai')
+        toast.info("Already Installed")
         return;
     }
     else{
         appsId.push(id)
         const strApps = JSON.stringify(appsId)
         localStorage.setItem("installed", strApps)
+        toast.success('Successfully Installed!')
     }
 }
 

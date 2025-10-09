@@ -1,13 +1,17 @@
 import { FaDownload, FaStar } from "react-icons/fa";
-import {  removeItemFLS, } from "../../public/localStorage";
+import {  getItemsFLS, removeItemFLS, } from "../../public/localStorage";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const InstalledApp = ({ app }) => {
-    const { id,image, title, downloads, ratingAvg,size } = app;
+const InstalledApp = ({ app,setInstalledList }) => {
+    const { id,image, title, downloads, ratingAvg,size } = app
+
+    const preIds = getItemsFLS()
 
     const handleUninstall = (id) =>{
       removeItemFLS(id)
+      const changedInstalled = preIds.filter(preId=>preId!==id)
+      setInstalledList(changedInstalled)
       toast.success('Uninstalled the App!')
     }
 

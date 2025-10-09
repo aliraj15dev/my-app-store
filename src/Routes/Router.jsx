@@ -12,9 +12,9 @@ const router = createBrowserRouter([
         children:[
             {index:true, Component:Home},
             {path:'apps', Component:Apps},
-            {path:'appinfo/:Id', Component:AppInfo},
+            {path:'apps/:Id', Component:AppInfo},
             {path:'installation', Component:Installation},
-            {path:'*', Component:ErrorPage}
+            {path:'*', Component:ErrorPage},
         ]
     },
 ])

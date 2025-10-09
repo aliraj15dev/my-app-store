@@ -15,7 +15,9 @@ const Home = () => {
       if (!delayOver){
         return (
           <div className="flex justify-center items-center h-screen bg-gray-100">
-            <img src={logo} className="w-30 animate-spin"></img>
+            <div className="flex text-6xl items-center">
+              L <img src={logo} className="w-8 h-8 animate-spin" alt="loading..."/> A D I N G
+            </div>
           </div>
         )
       }

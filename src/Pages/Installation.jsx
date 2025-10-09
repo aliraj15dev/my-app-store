@@ -12,6 +12,7 @@ const Installation = () => {
 
   const installedApps = apps.filter((app) => installedAppsID.includes(app.id))
 
+  const [installedList, setInstalledList] = useState(installedApps)
   const [delayOver, setDelayOver] = useState(false)
   const [sortOrder, setSortOrder] = useState(null)
 
@@ -23,7 +24,9 @@ const Installation = () => {
   if (!delayOver) {
     return (
       <div className="flex justify-center items-center h-screen bg-gray-100">
-        <img src={logo} className="w-30 animate-spin" />
+        <div className="flex text-6xl items-center justify-center">
+          L <img src={logo} className="w-8 h-8 animate-spin" alt="loading..."/> A D I N G
+        </div>
       </div>
     )
   }
@@ -67,12 +70,13 @@ const Installation = () => {
 
         <div className="space-y-5">
           {sortedApps.map((app) => (
-            <InstalledApp key={app.id} app={app} />
+            <InstalledApp key={app.id} app={app} setInstalledList={setInstalledList}/>
           ))}
         </div>
       </div>
 
-      <ToastContainer />
+      <ToastContainer
+        position="top-center"/>
     </div>
   );
 };

@@ -40,11 +40,9 @@ const Apps = () => {
   if (!delayOver) {
     return (
       <div className="flex justify-center items-center h-screen bg-gray-100">
-        <img
-          src={logo}
-          className="w-30 animate-spin"
-          alt="loading..."
-        />
+        <div className="flex text-6xl items-center">
+          L <img src={logo} className="w-8 h-8 animate-spin" alt="loading..."/> A D I N G
+        </div>
       </div>
     )
   }
@@ -58,11 +56,9 @@ const Apps = () => {
   if (loading) {
     return (
       <div className="flex justify-center items-center h-screen bg-gray-100">
-        <img
-          src={logo}
-          className="w-20 animate-spin"
-          alt="loading..."
-        />
+        <div className="flex text-6xl items-center">
+          L <img src={logo} className="w-8 h-8 animate-spin" alt="loading..."/> A D I N G
+        </div>
       </div>
     )
   }
@@ -82,7 +78,7 @@ const Apps = () => {
       {searchedApp.length === 0 ? (
         <NoAppsFound />
       ) : (
-        <div className="max-w-9/10 mx-auto space-y-4">
+        <div className="max-w-9/10 mx-auto space-y-4 mt-20">
           <div className="flex flex-col sm:flex-row justify-between gap-3">
             <h1 className="text-2xl font-bold">
               ({searchedApp.length}) Apps Found
@@ -98,7 +94,7 @@ const Apps = () => {
             />
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 mt-10">
             {searchedApp.map((app) => (
               <App key={app.id} app={app} />
             ))}
