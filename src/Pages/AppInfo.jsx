@@ -41,8 +41,8 @@ const AppInfo = () => {
     <div className="bg-gray-100 py-10">
       <div className="max-w-9/10 mx-auto">
       <h1 className="text-4xl font-semibold">App Details</h1>
-      <div className="flex flex-col sm:flex-row gap-5 sm:gap-20 my-5 border-b-2 border-gray-200 pb-5">
-        <figure className="shadow-md flex justify-center items-center py-3 sm:py-0">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-12 gap-5 md:gap-20 my-5 border-b-2 border-gray-200 pb-5">
+        <figure className="sm:col-span-1 lg:col-span-4 shadow-md flex justify-center items-center py-3 sm:py-0">
           <img
             className="w-full h-full"
             src={image}
@@ -50,17 +50,14 @@ const AppInfo = () => {
             style={{ width: "200px" }}
           />
         </figure>
-        <div className="space-y-5 w-full">
+        <div className="space-y-5 sm:col-span-1 lg:col-span-8">
           <div className="space-y-2 border-b-2 border-gray-200 pb-3">
             <h2 className="text-3xl font-bold">{title}</h2>
-            <p>
-              {" "}
-              Developed by{" "}
-              <span className="text-violet-500 font-bold">{companyName}</span>
+            <p>Developed by <span className="text-violet-500 font-bold">{companyName}</span>
             </p>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-10 items-center">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-5 items-center">
             <div>
               <img
                 src={downloadIcon}

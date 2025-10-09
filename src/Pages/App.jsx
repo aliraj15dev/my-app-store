@@ -3,14 +3,16 @@ import { FaDownload, FaStar } from "react-icons/fa";
 import { Link } from "react-router";
 
 const App = ({ app }) => {
-  const {id, image, title, downloads, ratingAvg } = app;
+  const { id, image, title, downloads, ratingAvg } = app;
   return (
-    <div>
-      <Link to={`/apps/${id}`}>
-        <div className="shadow-xl border-2 border-gray-300 p-5 space-y-3 rounded-xl hover:scale-110 duration-1000 w-60 mx-auto sm:w-auto">
-        <figure className="flex justify-center items-center w-full">
-          <img className="w-full h-60 p-5 bg-gray-200 rounded-lg"
-            src={image} alt="App Image"/>
+    <div className="hover:scale-105 duration-700 shadow-sm border-2 border-gray-300 bg-white rounded-lg p-5">
+      <Link to={`/apps/${id}`} className="space-y-3">
+        <figure className="bg-gray-200 p-5 rounded-lg flex justify-center items-center">
+          <img
+            className="rounded-xl"
+            src={image}
+            alt="App Image"
+          />
         </figure>
         <h2 className="text-3xl font-bold">{title}</h2>
         <div className="flex justify-between items-center">
@@ -23,7 +25,6 @@ const App = ({ app }) => {
             <h2>{ratingAvg}</h2>
           </div>
         </div>
-      </div>
       </Link>
     </div>
   );

@@ -20,7 +20,7 @@ const TopApps = () => {
         <p>Explore All Trending Apps on the Market developed by us</p>
       </div>
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 max-w-9/10 mx-auto">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 max-w-9/10 mx-auto mt-10">
         {demoApps.map(app=><TrendingApp key={app.id} app={app}/>)}
       </div>
 
