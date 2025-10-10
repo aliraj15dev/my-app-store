@@ -1,18 +1,14 @@
-import { useEffect, useState } from 'react';
 import Banner from '../Components/Banner';
 import StatesSection from '../Components/StatesSection';
 import TopApps from '../Components/TopApps';
 import logo from '../assets/logo.png'
+import useApps from '../Hooks/useApps';
 
 const Home = () => {
 
-    const [delayOver, setDelayOver] = useState(false)
-      useEffect(() => {
-        const timer = setTimeout(() => setDelayOver(true), 300)
-        return () => clearTimeout(timer)
-      }, [])
+  const {loading} = useApps()
 
-      if (!delayOver){
+      if (loading){
         return (
           <div className="flex justify-center items-center h-screen bg-gray-100">
             <div className="flex text-6xl items-center">

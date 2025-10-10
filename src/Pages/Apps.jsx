@@ -7,11 +7,11 @@ import logo from '../assets/logo.png'
 const Apps = () => {
   const [searchValue, setSearchValue] = useState("")
   const strSearchValue = searchValue.trim().toLowerCase()
-  const { apps } = useApps()
+  const { apps,loading } = useApps()
 
   const inputRef = useRef(null)
 
-  const [loading, setLoading] = useState(false)
+  const [loadings, setLoading] = useState(false)
   useEffect(() => {
     if (searchValue) {
       setLoading(true);
@@ -24,20 +24,14 @@ const Apps = () => {
     }
   }, [searchValue])
 
-  const [delayOver, setDelayOver] = useState(false)
-  useEffect(() => {
-    const timer = setTimeout(() => setDelayOver(true), 300)
-    return () => clearTimeout(timer)
-  }, [])
-
 
   useEffect(() => {
-    if (!loading && inputRef.current) {
+    if (!loadings && inputRef.current) {
       inputRef.current.focus()
     }
-  }, [loading])
+  }, [loadings])
 
-  if (!delayOver) {
+  if (loading) {
     return (
       <div className="flex justify-center items-center h-screen bg-gray-100">
         <div className="flex text-6xl items-center">
@@ -53,7 +47,7 @@ const Apps = () => {
       )
     : apps
 
-  if (loading) {
+  if (loadings) {
     return (
       <div className="flex justify-center items-center h-screen bg-gray-100">
         <div className="flex text-6xl items-center">

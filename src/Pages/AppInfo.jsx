@@ -1,4 +1,4 @@
-import { Navigate, useParams } from "react-router";
+import { useParams } from "react-router";
 import useApps from "../Hooks/useApps";
 import { Bar, BarChart, Rectangle, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 import { useState } from "react";

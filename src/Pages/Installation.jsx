@@ -3,26 +3,22 @@ import { getItemsFLS } from "../../public/localStorage";
 import useApps from "../Hooks/useApps";
 import InstalledApp from "./InstalledApp";
 import { ToastContainer } from "react-toastify";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import logo from '../assets/logo.png'
 
 const Installation = () => {
   const installedAppsID = getItemsFLS()
   const [installedList, setInstalledList] = useState(installedAppsID)
 
-  const { apps } = useApps()
+  const { apps,loading } = useApps()
 
   const installedApps = apps.filter((app) => installedList.includes(app.id))
 
-  const [delayOver, setDelayOver] = useState(false)
   const [sortOrder, setSortOrder] = useState(null)
 
-  useEffect(() => {
-    const timer = setTimeout(() => setDelayOver(true), 300)
-    return () => clearTimeout(timer)
-  }, [])
 
-  if (!delayOver) {
+
+  if (loading) {
     return (
       <div className="flex justify-center items-center h-screen bg-gray-100">
         <div className="flex text-6xl items-center justify-center">

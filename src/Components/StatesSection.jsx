@@ -1,4 +1,3 @@
-import React from "react";
 import { FaDownload,FaGooglePlay, FaStar } from "react-icons/fa";
 
 const StatesSection = () => {
