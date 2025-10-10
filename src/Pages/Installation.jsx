@@ -8,11 +8,12 @@ import logo from '../assets/logo.png'
 
 const Installation = () => {
   const installedAppsID = getItemsFLS()
+  const [installedList, setInstalledList] = useState(installedAppsID)
+
   const { apps } = useApps()
 
-  const installedApps = apps.filter((app) => installedAppsID.includes(app.id))
+  const installedApps = apps.filter((app) => installedList.includes(app.id))
 
-  const [installedList, setInstalledList] = useState(installedApps)
   const [delayOver, setDelayOver] = useState(false)
   const [sortOrder, setSortOrder] = useState(null)
 
