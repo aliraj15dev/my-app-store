@@ -5,6 +5,7 @@ import InstalledApp from "./InstalledApp";
 import { ToastContainer } from "react-toastify";
 import { useState } from "react";
 import logo from '../assets/logo.png'
+import { useNavigate } from "react-router";
 
 const Installation = () => {
   const installedAppsID = getItemsFLS()
@@ -16,7 +17,7 @@ const Installation = () => {
 
   const [sortOrder, setSortOrder] = useState(null)
 
-
+  const navigate = useNavigate()
 
   if (loading) {
     return (
@@ -42,7 +43,12 @@ const Installation = () => {
           <p>Explore All Trending Apps on the Market developed by us.</p>
         </div>
 
-        <div className="flex flex-col sm:flex-row justify-between gap-3">
+        {installedApps.length===0
+        ? (<div className="flex flex-col gap-5 text-center">
+          <p className="text-2xl font-semibold">🎯 You have not installed any Apps. Go back and install apps first</p>
+          <button onClick={()=>navigate('/apps')} className="max-w-40 mx-auto btn bg-gradient-to-b from-blue-600 to-violet-600 text-white">Go Apps section</button>
+        </div>)
+        : (<div className="flex flex-col sm:flex-row justify-between gap-3">
           <h1 className="text-2xl font-bold">
             {installedApps.length} Apps Installed
           </h1>
@@ -63,7 +69,7 @@ const Installation = () => {
               </li>
             </ul>
           </div>
-        </div>
+        </div>)}
 
         <div className="space-y-5">
           {sortedApps.map((app) => (
